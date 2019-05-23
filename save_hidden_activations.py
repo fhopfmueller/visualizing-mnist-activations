@@ -44,3 +44,4 @@ with Timer("running model:") as t:
         hidden_activations = model.hidden_activations(x_train)
 
 torch.save(hidden_activations, "data/hidden_activations.pt")
+torch.save([x_train, y_train], "data/x_y_train.pt")
